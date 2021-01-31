@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add a New <strong style="color: darkslateblue;">Place</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content>
+          <ion-input type="text" placeholder="Please, write a title..." #title required autofocus></ion-input>
+          <ion-input type="text" placeholder="https://image-website.com" #imageURL required></ion-input>
+          <br>
+          <ion-button color="dark" (click)="saveNewPlace(title, imageURL)">Add</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar justify-content-center color="dark" class="ion-text-center">
+    <ion-icon name="cog" class="icon-m"></ion-icon>
+    <ion-title>©  2020 Copyright: mecanizados</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,7 @@
+ion-content{
+  --ion-background-color: darkslateblue;
+}
+
 #container {
   text-align: center;
 
@@ -9,19 +13,25 @@
 }
 
 #container strong {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 26px;
+  color: white;
 }
 
 #container p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: black;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+
+.icon-m {
+  width: 10vw;
+  height: 10vh;
 }
